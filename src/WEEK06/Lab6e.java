@@ -42,7 +42,7 @@ public static String isReverse(String fisrt) {
    for (int i = lenght-1; i >=0; i--) {
       System.out.print(str.charAt(i));
    }
-   return "";
+   return "hola";
 
 
 

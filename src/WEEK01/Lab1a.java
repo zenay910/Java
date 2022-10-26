@@ -1,9 +1,23 @@
 package WEEK01;
-// import java.util.*;
+import java.util.*;
 public class Lab1a {
 
 	public static void main(String[] args) {
-		System.out.println("Error: Could not find or load main class WEEK06.Lab6e in module CS105");
-
+		try (Scanner in = new Scanner(System.in)) {
+			int num = 0;
+			String numStr;
+			boolean runnig = true;	
+			do {
+				System.out.println("please enter a number: ");
+				numStr = in.nextLine();
+				try {
+					num = Integer.parseInt(numStr);
+					System.out.println("you entered: " + num);
+					runnig = false;
+				} catch (Exception e) {
+					System.out.println( "WRONG "  + num + " its not a number!");
+				}
+			} while (runnig);
+		}
 	}
 }

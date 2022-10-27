@@ -1,6 +1,7 @@
 package WEEK02;
 import java.util.*;
-public class Lab2a {
+public class Lab2b
+ {
 
 	public static void main(String[] args) {
 		try (Scanner in = new Scanner(System.in)) {

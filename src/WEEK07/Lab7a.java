@@ -42,7 +42,6 @@ public class Lab7a {
          }else{
          	ans = "College";
          }
-         System.out.println(name +" is "+ age + " and may attend to "+ ans);
 
 
          do {
@@ -78,4 +77,5 @@ public class Lab7a {
       return age;
 
    }
+
 }

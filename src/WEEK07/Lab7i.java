@@ -26,70 +26,86 @@ public class Lab7i {
 }
 
    private static int getValidInt(String string, String string2) {
-      Scanner in = new Scanner(System.in);
-      String input = "";
-      int fisrt= 0;
-      boolean run = true;
-      do {
-      System.out.println(string);
-      input = in.nextLine();
-      try {
-         fisrt = Integer.parseInt(input);
-         run = false;
-      } catch (Exception e) {
-         System.out.println(string2);
-      }  
-      } while (run);
-      return fisrt;
-   }
+      
+      //
+      //
+      //
 
-   private static double getValidDouble(String string, String string2) {
-      Scanner in = new Scanner(System.in);
-      double fisrt= 0 ;
-      boolean run = true;
-      String input = "";
-
-
-
-      do {
+      try (Scanner in = new Scanner(System.in)) {
+         String input = "";
+         int fisrt= 0;
+         boolean run = true;
+         do {
          System.out.println(string);
          input = in.nextLine();
          try {
-            fisrt = Double. parseDouble(input);
+            fisrt = Integer.parseInt(input);
             run = false;
-            
          } catch (Exception e) {
             System.out.println(string2);
-         }
+         }  
+         } while (run);
+         return fisrt;
+      }
+   }
 
-   } while (run);
+   private static double getValidDouble(String string, String string2) {
+      
+      try (//
+            //
+            //
+      Scanner in = new Scanner(System.in)) {
+         double fisrt= 0 ;
+         boolean run = true;
+         String input = "";
 
 
 
-      return fisrt;
+         do {
+            System.out.println(string);
+            input = in.nextLine();
+            try {
+               fisrt = Double. parseDouble(input);
+               run = false;
+               
+            } catch (Exception e) {
+               System.out.println(string2);
+            }
+
+  } while (run);
+
+
+
+         return fisrt;
+      }
    }
 
    private static String getValidYN(String string, String string2) {
-      Scanner in = new Scanner(System.in);
-      boolean run = true;
-      String input = "";
-      String res = "";
+      try (//
+            //
+            //
+            //
+            //
+      Scanner in = new Scanner(System.in)) {
+         boolean run = true;
+         String input = "";
+         String res = "";
 
-      System.out.println(string);
-      input = in.nextLine();
+         System.out.println(string);
+         input = in.nextLine();
 
-   do {  
-       if (input.equalsIgnoreCase("Y")) {
-         run = false;
-         res = "Y";
-      }else if (input.equalsIgnoreCase("N")){
-         run = false;
-         res = "null";
-      }else{
-         System.out.println(string2);
-      }
+  do {  
+          if (input.equalsIgnoreCase("Y")) {
+            run = false;
+            res = "Y";
+         }else if (input.equalsIgnoreCase("N")){
+            run = false;
+            res = "null";
+         }else{
+            System.out.println(string2);
+         }
   
-   } while (run);
+  } while (run);
 
 
 
@@ -97,7 +113,8 @@ public class Lab7i {
 
 
 
-      return res;
+         return res;
+      }
    }
 
 

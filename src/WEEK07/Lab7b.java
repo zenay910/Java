@@ -76,19 +76,26 @@ public class Lab7b {
       }
    private static int getL(String letter) {
       int fisrt = 0;
-      Scanner in = new Scanner(System.in);
-      boolean run = true;
-      String input = "";
-      do {
-         System.out.println("Please enter the length of side " + letter);
-         input = in.nextLine();
-         try {
-            fisrt = Integer.parseInt(input);
-            run = false;
-         } catch (Exception e) {
-            System.out.println("Error: Please enter a number.");
-         }
-      } while (run);
+      //
+      //
+
+      //
+
+      try (//
+      Scanner in = new Scanner(System.in)) {
+         boolean run = true;
+         String input = "";
+         do {
+            System.out.println("Please enter the length of side " + letter);
+            input = in.nextLine();
+            try {
+               fisrt = Integer.parseInt(input);
+               run = false;
+            } catch (Exception e) {
+               System.out.println("Error: Please enter a number.");
+            }
+         } while (run);
+      }
       return fisrt;
    }
    private static String getSide(Scanner in) {

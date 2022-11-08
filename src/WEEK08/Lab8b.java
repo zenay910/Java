@@ -33,26 +33,30 @@ public class Lab8b {
          		} // end of try & catch
 
          	} // end of while
-            String array =  "Array IndexItem";
-            String index =  "Item";
 
+			 String array =  "Array IndexItem";
+			 String index =  "Item";
+			System.out.printf("%s %20s%n", array,index);
 			int nsum = mySum(nums);
 
-         	System.out.printf("%s %20s%n", array,index);
  // end of for
          	System.out.printf("There are %d items in the ArrayList.%n", nums.size());
          	System.out.printf("The sum total of numbers in the ArrayList is %d.%n", nsum);
 
 			dups(nums,reps);
-			System.out.println(" this is reps"+reps);
+			if(!reps.isEmpty()){
+				System.out.println("The following numbers were duplicated in the ArrayList: "+reps);
+			}else{
+				System.out.println("There are not duplicated numbers");
+			}
 			
-
          	while (!again) {
 
          		System.out.print("Would you like to play again?");
          		answer = in.nextLine();
          		if (answer.equalsIgnoreCase("y")) {
          			again = true;
+					nums.clear();
          		} else if (answer.equalsIgnoreCase("n")) {
          			again = true;
          			valid = true;
@@ -66,22 +70,14 @@ public class Lab8b {
 	}// end of main
 
 	private static void dups(ArrayList<Integer> nums, List<Integer> reps) {
-
 		for(int i = 0; i < nums.size()-1; i++){
 			int num = nums.get(i);
-			if(nums.subList(i,nums.size()-1).contains(num)){
-				//reps.add(num);
-				System.out.println(nums.subList(i,nums.size()-1));
-				System.out.println("este es el sout"+num);
+			if(nums.subList(i+1,nums.size()).contains(num)){
+				if(!reps.contains(num)){
+					reps.add(num);
+				}
 			}
 		}
-
-
-
-
-
-
-
 	}
 
 	private static int mySum(ArrayList<Integer> nums) {

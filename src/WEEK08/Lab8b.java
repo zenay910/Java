@@ -5,6 +5,19 @@ import java.util.*;
 public class Lab8b {
 
 	public static void main(String[] args) {
+
+
+		int max = Integer.MIN_VALUE;
+		for (String arg : args) {
+			int value = Integer.parseInt(arg);
+			if (value > max) {
+				max = value;
+			}
+		}
+		System.out.println("The max is " + max);
+
+
+
 		try (Scanner in = new Scanner(System.in)) {
         ArrayList<Integer> nums = new ArrayList<Integer>();
 		List<Integer> reps = new ArrayList<Integer>();
@@ -57,6 +70,7 @@ public class Lab8b {
          		if (answer.equalsIgnoreCase("y")) {
          			again = true;
 					nums.clear();
+					reps.clear();
          		} else if (answer.equalsIgnoreCase("n")) {
          			again = true;
          			valid = true;

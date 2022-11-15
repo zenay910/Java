@@ -158,13 +158,22 @@ returns it back to the calling method.
 				while (true) {
 					System.out.println(question);
 					String input = sIn.nextLine();
-
-					if(input.equals("a") ||input.equals("b") ||input.equals("c")){
-						ans = input;
-						break;
+					if(choices.length <4){
+						if(input.equals(choices[0]) || input.equals(choices[1]) || input.equals(choices[2])){
+							ans = input;
+							break;
+						}else{
+							System.out.println(warning);
+						}	
 					}else{
-						System.out.println(warning);
+						if(input.equals(choices[0]) || input.equals(choices[1]) || input.equals(choices[2]) || input.equals(choices[3])){
+							ans = input;
+							break;
+						}else{
+							System.out.println(warning);
+						}	
 					}
+
 
 
 				}

@@ -110,7 +110,7 @@ public class Lab9a {
 			System.out.printf("SHOPING LIST\n");
 			System.out.println("----------------");
 			for(int i = 0; i<shoppingList.size()-1; i+=2){
-				System.out.printf("%-10s %s \n", shoppingList.get(i),shoppingList.get(i+1));
+				System.out.printf("%-10s $%s.00 \n", shoppingList.get(i),shoppingList.get(i+1));
 
 			}
 			System.out.println("----------------");

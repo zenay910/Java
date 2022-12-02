@@ -1,10 +1,12 @@
 package WEEK12;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.*;
 
 
-public class Lab12a{
+public class Lab12b{
 		public static void main(String[] args) {
 		    Scanner sIn = new Scanner(System.in);	
 		    ArrayList<String> shoppingList = new ArrayList<String>();
@@ -19,7 +21,8 @@ public class Lab12a{
 		        System.out.println("3. Show Items");
 		        System.out.println("4. Sort Items");
 		        System.out.println("5. Save");
-		        System.out.println("6. Exit");
+		        System.out.println("6. Open");
+		        System.out.println("7. Exit");
 		        System.out.print("Please enter a command: ");
 		        choice = sIn.nextLine(); 
 		        		
@@ -39,7 +42,10 @@ public class Lab12a{
 					case "5":
 						saveList(sIn,shoppingList, fileName);
 						break;
-		            case "6":	
+					case "6":
+						openList(sIn,shoppingList, fileName);
+						break;
+		            case "7":	
 		            	System.out.println("\nGoodbye");
 		                done = true;
 		                break;
@@ -47,6 +53,42 @@ public class Lab12a{
 		            	System.out.println("Invalid response.  Please enter a choice from the menu (1-6).");
 		        }
 		    }while(!done);
+		}
+
+
+
+		private static void openList(Scanner sIn, ArrayList<String> shoppingList, String fileName) {
+			boolean run = true;
+			while(run){
+				System.out.println("Are you sure you want to overwrite the current shopping list. Y/N");
+				String input = sIn.nextLine();
+				if(input.equalsIgnoreCase("y")){
+					try (Scanner in = new Scanner(System.in)) {}
+					File inFile = new File(fileName);
+					Scanner pf = null;
+					String line = null;
+					try {
+						pf = new Scanner(inFile);
+					}catch (FileNotFoundException e) {
+						System.out.println("File not found");
+						System.exit(1);
+					}
+					shoppingList.clear();
+
+
+					while(pf.hasNext()){
+						line = pf.nextLine();
+						shoppingList.add(line);
+					}
+		
+				}else if(input.equalsIgnoreCase("n")){
+					System.out.println("The file wasnt overwrited");
+					run = false;
+
+				}else{
+					System.out.println("Invalid response. Y/N");
+				}
+			}
 		}
 
 
@@ -176,6 +218,7 @@ public class Lab12a{
 
 			}
 			System.out.println("----------------");
+			System.out.println(shoppingList);
 
 
 

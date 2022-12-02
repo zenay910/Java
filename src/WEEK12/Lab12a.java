@@ -8,20 +8,6 @@ public class Lab12a{
 		public static void main(String[] args) {
 		    Scanner sIn = new Scanner(System.in);	
 		    ArrayList<String> shoppingList = new ArrayList<String>();
-			shoppingList.add("dssd");
-			shoppingList.add("2112");
-			shoppingList.add("dssd");
-			shoppingList.add("2112");
-			shoppingList.add("dssd");
-			shoppingList.add("2112");
-			shoppingList.add("dssd");
-			shoppingList.add("2112");
-			shoppingList.add("dssd");
-			shoppingList.add("2112");
-			shoppingList.add("dssd");
-			shoppingList.add("2112");
-			shoppingList.add("dssd");
-			shoppingList.add("2112");
 		    String choice;												
 		    boolean done = false;
 			String fileName = "txt.txt";								
@@ -33,7 +19,7 @@ public class Lab12a{
 		        System.out.println("3. Show Items");
 		        System.out.println("4. Sort Items");
 		        System.out.println("5. Save");
-		        System.out.println("6. Exit");
+		        System.out.println("6. Exit\n");
 		        System.out.print("Please enter a command: ");
 		        choice = sIn.nextLine(); 
 		        		
@@ -97,25 +83,6 @@ public class Lab12a{
 					System.out.println("Invalid entry, Answer with (Y/N)");
 				}
 			}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		}
 
 

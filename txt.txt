@@ -1,1 +1,11 @@
-andrescantero10@gmail.com
+Bath:1
+House:3
+cream:4
+gas:4
+ivan:2
+meat:3
+milk:2
+oil:2
+roof:7
+salt:5
+santiago:2

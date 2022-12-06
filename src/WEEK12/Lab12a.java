@@ -67,7 +67,6 @@ public class Lab12a{
 						} catch (Exception e) {
 							System.out.println("ERROR CREATING SAVING THE FILE");
 						}
-						writer.write("ITEM     #\n");
 						for (int i = 0; i<shoppingList.size()-1; i+=2) {
 							writer.printf("%s %s\n",shoppingList.get(i), shoppingList.get(i+1));
 							

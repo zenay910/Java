@@ -1,4 +1,4 @@
-package OPP;
+package junit;
 
 import java.time.LocalDate;
 
@@ -10,7 +10,7 @@ public class person {
 
     //CONSTRUCTORS
     person(){
-        name = "nulll";
+        name = "null";
         dob = LocalDate.parse("1900-01-01");
         gender = "null";
         phone = "null";
@@ -24,11 +24,6 @@ public class person {
     //SETTERS
     public void setName(String n){
         name = n;
-
-
-
-
-        
     }    
     public void setDob(String n){
         dob = LocalDate.parse(n);

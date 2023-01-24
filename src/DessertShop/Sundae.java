@@ -29,7 +29,4 @@ public class Sundae extends IceCream{
         return toppingPrice;
     }
 
-
-
-    
 }

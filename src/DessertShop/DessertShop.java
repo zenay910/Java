@@ -19,10 +19,10 @@ public class DessertShop {
         ord.add(i6);
 
         for (DessertItem n : ord.getOrderList()) {
-            System.out.println(DessertItem.getName(n));
+            System.out.println(n.getName());
             
         }
-        System.out.println(ord.itemCount());
+        System.out.println("TOTAL ITEMS: "+ord.itemCount());
         
 
 

@@ -10,8 +10,11 @@ public class Lab13a {
 
 
 	public static void main(String[] args) {
+<<<<<<< HEAD
 		// main goes here
 		// Variables
+=======
+>>>>>>> 5159fc0ea9ad2949084b56c094d572b95001f8c1
 		File file = new File("Pwd.txt");
 		Scanner pf = null; // initialize scanner
 		PrintWriter valid = null;
@@ -22,32 +25,47 @@ public class Lab13a {
 		boolean done = false;
 
 		while (!done) {
+<<<<<<< HEAD
 			// check if pwd.txt is found
+=======
+>>>>>>> 5159fc0ea9ad2949084b56c094d572b95001f8c1
 			try {
 				pf = new Scanner(file);
 			} catch (Exception e) {
 				System.out.println("Error. We cannot find this file.");
 				break;
+<<<<<<< HEAD
 			} // end of try/catch
 
 			// Create valid file
+=======
+			} 
+>>>>>>> 5159fc0ea9ad2949084b56c094d572b95001f8c1
 			try {
 				valid = new PrintWriter(validStr);
 			} catch (FileNotFoundException e) {
 				System.out.println("Error! Unable to create: " + validStr);
 			}
+<<<<<<< HEAD
 
 			// Create invalid file
+=======
+>>>>>>> 5159fc0ea9ad2949084b56c094d572b95001f8c1
 			try {
 				invalid = new PrintWriter(invalidStr);
 			} catch (FileNotFoundException e) {
 				System.out.println("Error! Unable to create: " + invalidStr);
 			}
+<<<<<<< HEAD
 
 			// While loop to go through each word in Pwd.txt file
 			while (pf.hasNext()) {
 				passwd = pf.nextLine();
 				// if statements
+=======
+			while (pf.hasNext()) {
+				passwd = pf.nextLine();
+>>>>>>> 5159fc0ea9ad2949084b56c094d572b95001f8c1
 				if (!(passwd.length() >= 8)) {
 					invalid.printf("%-15s Invalid Password! Must be at least 8 characters long.%n", passwd);
 				} else if (!hasUpper(passwd)) {
@@ -61,6 +79,7 @@ public class Lab13a {
 				}else {
 					valid.printf("%s%n", passwd);
 				}
+<<<<<<< HEAD
 
 			} // end of while
 			//close files
@@ -75,10 +94,20 @@ public class Lab13a {
 
 	public static boolean hasUpper(String passwd) {
 		// for loop to check every character in password
+=======
+			}
+			invalid.close();
+			valid.close();
+			done = true;
+		}
+	}
+	public static boolean hasUpper(String passwd) {
+>>>>>>> 5159fc0ea9ad2949084b56c094d572b95001f8c1
 		for (int i = 0; i < passwd.length(); i++) {
 			if (Character.isUpperCase(passwd.charAt(i))) {
 				return true;
 			}
+<<<<<<< HEAD
 		} // end of for
 
 		return false;
@@ -87,10 +116,17 @@ public class Lab13a {
 
 	public static boolean hasLower(String passwd) {
 		// for loop to check every character in password
+=======
+		} 
+		return false;
+	}
+	public static boolean hasLower(String passwd) {
+>>>>>>> 5159fc0ea9ad2949084b56c094d572b95001f8c1
 		for (int i = 0; i < passwd.length(); i++) {
 			if (Character.isLowerCase(passwd.charAt(i))) {
 				return true;
 			}
+<<<<<<< HEAD
 		} // end of for
 
 		return false;
@@ -99,10 +135,17 @@ public class Lab13a {
 
 	public static boolean hasNumber(String passwd) {
 		// for loop to check every character in password
+=======
+		} 
+		return false;
+	} 
+	public static boolean hasNumber(String passwd) {
+>>>>>>> 5159fc0ea9ad2949084b56c094d572b95001f8c1
 		for (int i = 0; i < passwd.length(); i++) {
 			if (Character.isDigit(passwd.charAt(i))) {
 				return true;
 			}
+<<<<<<< HEAD
 		} // end of for
 
 		return false;
@@ -126,4 +169,20 @@ public class Lab13a {
 
 	} // end of hasNumber
 
+=======
+		}
+		return false;
+	} 
+	public static boolean hasSpecial(String passwd) {
+		String special = "@#%-&*";
+		for (int i = 0; i < passwd.length(); i++) {
+			for (int j = 0; j < special.length(); j++) {
+				if (passwd.charAt(i) == special.charAt(j)) {
+					return true;
+				}
+			} 
+		} 
+		return false;
+	}
+>>>>>>> 5159fc0ea9ad2949084b56c094d572b95001f8c1
 }

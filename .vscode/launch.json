@@ -1,0 +1,252 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch personShop",
+            "request": "launch",
+            "mainClass": "OPP.personShop",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab1a",
+            "request": "launch",
+            "mainClass": "WEEK01.Lab1a",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab1b",
+            "request": "launch",
+            "mainClass": "WEEK01.Lab1b",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab2a",
+            "request": "launch",
+            "mainClass": "WEEK02.Lab2a",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab2b",
+            "request": "launch",
+            "mainClass": "WEEK02.Lab2b",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab3a",
+            "request": "launch",
+            "mainClass": "WEEK03.Lab3a",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab4a",
+            "request": "launch",
+            "mainClass": "WEEK04.Lab4a",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab4b",
+            "request": "launch",
+            "mainClass": "WEEK04.Lab4b",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab4c",
+            "request": "launch",
+            "mainClass": "WEEK04.Lab4c",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab5a",
+            "request": "launch",
+            "mainClass": "WEEK05.Lab5a",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab5b",
+            "request": "launch",
+            "mainClass": "WEEK05.Lab5b",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab5i",
+            "request": "launch",
+            "mainClass": "WEEK05.Lab5i",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab5x",
+            "request": "launch",
+            "mainClass": "WEEK05.Lab5x",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab6a",
+            "request": "launch",
+            "mainClass": "WEEK06.Lab6a",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab6b",
+            "request": "launch",
+            "mainClass": "WEEK06.Lab6b",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab6c",
+            "request": "launch",
+            "mainClass": "WEEK06.Lab6c",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab6e",
+            "request": "launch",
+            "mainClass": "WEEK06.Lab6e",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab7a",
+            "request": "launch",
+            "mainClass": "WEEK07.Lab7a",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab7b",
+            "request": "launch",
+            "mainClass": "WEEK07.Lab7b",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab7i",
+            "request": "launch",
+            "mainClass": "WEEK07.Lab7i",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab8a",
+            "request": "launch",
+            "mainClass": "WEEK08.Lab8a",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab8b",
+            "request": "launch",
+            "mainClass": "WEEK08.Lab8b",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab9a",
+            "request": "launch",
+            "mainClass": "WEEK09.Lab9a",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab9i",
+            "request": "launch",
+            "mainClass": "WEEK09.Lab9i",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab10a",
+            "request": "launch",
+            "mainClass": "WEEK10.Lab10a",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab10b",
+            "request": "launch",
+            "mainClass": "WEEK10.Lab10b",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab10c",
+            "request": "launch",
+            "mainClass": "WEEK10.Lab10c",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab11b",
+            "request": "launch",
+            "mainClass": "WEEK11.Lab11b",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab12a",
+            "request": "launch",
+            "mainClass": "WEEK12.Lab12a",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab12b",
+            "request": "launch",
+            "mainClass": "WEEK12.Lab12b",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab12x",
+            "request": "launch",
+            "mainClass": "WEEK12.Lab12x",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab13a",
+            "request": "launch",
+            "mainClass": "WEEK13.Lab13a",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab14a",
+            "request": "launch",
+            "mainClass": "WEEK14.Lab14a",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch Z01",
+            "request": "launch",
+            "mainClass": "Z01.Z01",
+            "projectName": "CS105"
+        }
+    ]
+}

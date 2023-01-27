@@ -1,39 +1,43 @@
-package DessertShop;
+package dessertShop;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class Order {
-    
-    private ArrayList<DessertItem> order;
-
-    Order(){
-        order = new ArrayList<DessertItem>();
-    }
-
-    public ArrayList<DessertItem> getOrderList(){
-        return order;
-    }
-    public void add(DessertItem n ){
-        order.add(n);
-        
-    }
-    public int itemCount(){
-        return order.size();
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	//Attributes
+	private ArrayList<DessertItem> order;
+	
+	//Constructors
+	public Order() {
+		order = new ArrayList<DessertItem>();
+	}
+	
+	//Methods
+	public ArrayList<DessertItem> getOrderList() {
+		return order;
+	}
+	
+	public void add(DessertItem di) {
+		order.add(di);
+	}
+	
+	public int itemCount() {
+		return order.size();
+	}
+	
+	public double orderCost() {
+		double totalCost = 0;
+		for(DessertItem o : order) {
+			totalCost += o.calculateCost();
+		}
+		return totalCost;
+	}
+	
+	public double orderTax() {
+		double totalTax = 0;
+		for(DessertItem o : order) {
+			totalTax += o.calculateTax();
+		}
+		return totalTax;
+	}
 
 }

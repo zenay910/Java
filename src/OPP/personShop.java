@@ -1,6 +1,6 @@
 package OPP;
 
-public class Z01 {
+public class personShop {
 
 
 	public static void main(String[] args) {

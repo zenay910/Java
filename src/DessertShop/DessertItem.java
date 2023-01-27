@@ -1,4 +1,4 @@
-package dessertShop;
+package DessertShop;
 
 public abstract class DessertItem {
 	//Attributes

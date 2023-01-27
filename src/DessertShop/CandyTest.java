@@ -1,4 +1,4 @@
-package dessertShop;
+package DessertShop;
 
 import static org.junit.jupiter.api.Assertions.*;
 

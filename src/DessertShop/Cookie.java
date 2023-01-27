@@ -1,4 +1,4 @@
-package dessertShop;
+package DessertShop;
 
 public class Cookie extends DessertItem {
 

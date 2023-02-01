@@ -9,11 +9,7 @@ public class personTest {
 
 	@Test
 	public void testSetName() {
-		Junit test = new Junit();
-		String name = test.
-		
-		
-
+		fail("Not yet implemented");
 	}
 
 	@Test

@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch DessertShop",
+            "request": "launch",
+            "mainClass": "DessertShop.DessertShop",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+            "name": "Launch MagelightUniversity",
+            "request": "launch",
+            "mainClass": "MagelightUniversity.MagelightUniversity",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"

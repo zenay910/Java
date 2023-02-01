@@ -8,6 +8,13 @@ public class person {
     private String gender;
     private String phone;
 
+    person(){
+        name = "";
+        bd = null;
+        gender = "";
+        phone = "";
+    }
+
 
     person( String n, String b, String g, String p ){
         name = n;

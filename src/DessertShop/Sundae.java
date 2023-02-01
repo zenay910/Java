@@ -1,32 +1,46 @@
 package DessertShop;
 
 public class Sundae extends IceCream{
-    private String toppingName;
-    private double toppingPrice;
+	
+	//Attributes
+	private String toppingName;
+	private double toppingPrice;
 
-    Sundae(){
-        toppingName = "";
-        toppingPrice = 0.0;
+	//Constructors
+	//default
+	public Sundae() {
+		super();
+		toppingName = "";
+		toppingPrice = 0.0;
+	}
 
-    }
-    Sundae(String x, int sco, double pps, String n, double s){
-        super.setName(x);
-        super.setScoopCount(sco);
-        super.setPricePerScoop(pps);;
-        toppingName = n;
-        toppingPrice =s;
-    }
-    public void setToppingName(String n){
-        toppingName=n;
-    }
-    public void setToppingPrice(double n){
-        toppingPrice=n;
-    }
-    public String getToppingName(){
-        return toppingName;
-    }
-    public double getToppingPrice(){
-        return toppingPrice;
-    }
+	//full constructor
+	public Sundae(String n, int sc, double pps, String tn, double tp) {
+		super(n, sc, pps);
+		toppingName = tn;
+		toppingPrice = tp;
+	}
+
+	//Methods
+	public String getToppingName() {
+		return toppingName;
+	}
+
+	public double getToppingPrice() {
+		return toppingPrice;
+	}
+
+	public void setToppingName(String tn) {//setters are void
+		toppingName = tn;
+	}
+
+	public void setToppingPrice(double tp) {//setters are void
+		toppingPrice = tp;
+	}
+	
+	public double calculateCost() {
+		return toppingPrice + super.calculateCost();
+	}
+
 
 }

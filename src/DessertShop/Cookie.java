@@ -1,32 +1,46 @@
 package DessertShop;
 
-public class Cookie extends DessertItem{
-    private int cookieQty;
-    private double pricePerDozen;
+public class Cookie extends DessertItem {
 
-    Cookie(){
-        super.setName("");
-        cookieQty = 0;
-        pricePerDozen = 0.0;
-    }
-    Cookie(String x, int n, double s){
-        super.setName(x);
-        cookieQty = n;
-        pricePerDozen = s;
-    }
-    public void setCookieQty(int n){
-        cookieQty=n;
-    }
-    public void setPricePerDozen(double n){
-        pricePerDozen=n;
-    }
-    public double getCookieQty(){
-        return cookieQty;
-    }
-    public double getPricePerDozen(){
-        return pricePerDozen;
-    }
+	//Attributes
+	private int cookieQty;
+	private double pricePerDozen;
+
+	//Constructors
+	//default
+	public Cookie() {
+		super();
+		cookieQty = 0;
+		pricePerDozen = 0.0;
+	}
+
+	//full constructor
+	public Cookie(String n, int cq, double ppd) {
+		super(n);
+		cookieQty = cq;
+		pricePerDozen = ppd;
+	}
+
+	//Methods
+	public double getCookieQty() {
+		return cookieQty;
+	}
+
+	public double getPricePerDozen() {
+		return pricePerDozen;
+	}
+
+	public void setCookieQty(int cq) {//setters are void
+		cookieQty = cq;
+	}
+
+	public void setPricePerDozen(double ppd) {//setters are void
+		pricePerDozen = ppd;
+	}
+	
+	public double calculateCost() {
+		return (cookieQty*pricePerDozen)/12;
+	}
 
 
-    
 }

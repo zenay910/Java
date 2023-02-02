@@ -70,27 +70,6 @@ public class DessertShop {
 		        }//end of switch (choice)
 		    }//end of if (choice.equals(""))
 		}//end of while (!done)
-<<<<<<< HEAD
-		System.out.println("\n");
-		
-=======
-		/** 
-		System.out.println("\n");
->>>>>>> 781d76597b24571d1e50102aafd9998a0d446564
-		for(DessertItem o : order1.getOrderList()) {
-			System.out.printf("%-25s$%-8.2f[Tax: $%.2f]\n", o.getName(), o.calculateCost(), o.calculateTax());
-		}
-		
-		System.out.println("------------------------------------------------");
-		
-		System.out.printf("%-25s$%-8.2f[Tax: $%.2f]\n", "Order Subtotals: ", order1.orderCost(), order1.orderTax());
-		
-		double orderTotal = order1.orderCost() + order1.orderTax();
-		
-		System.out.printf("%-25s$%-8.2f\n", "Order Total: ", orderTotal);
-		
-		System.out.println("Total items in the order: " + order1.itemCount());
-		*/
 		
 	}
 	

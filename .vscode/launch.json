@@ -13,6 +13,16 @@
         },
         {
             "type": "java",
+<<<<<<< HEAD
+            "name": "Launch MagelightUniversity",
+            "request": "launch",
+            "mainClass": "MagelightUniversity.MagelightUniversity",
+            "projectName": "CS105"
+        },
+        {
+            "type": "java",
+=======
+>>>>>>> 7c6c3e3ab74d485f7b8919abd59feb97cde3580f
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"

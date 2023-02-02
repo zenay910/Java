@@ -70,8 +70,8 @@ public class DessertShop {
 		        }//end of switch (choice)
 		    }//end of if (choice.equals(""))
 		}//end of while (!done)
+		/** 
 		System.out.println("\n");
-		
 		for(DessertItem o : order1.getOrderList()) {
 			System.out.printf("%-25s$%-8.2f[Tax: $%.2f]\n", o.getName(), o.calculateCost(), o.calculateTax());
 		}
@@ -85,7 +85,7 @@ public class DessertShop {
 		System.out.printf("%-25s$%-8.2f\n", "Order Total: ", orderTotal);
 		
 		System.out.println("Total items in the order: " + order1.itemCount());
-		
+		*/
 		
 	}
 	

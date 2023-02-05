@@ -70,8 +70,14 @@ public class DessertShop {
 		        }//end of switch (choice)
 		    }//end of if (choice.equals(""))
 		}//end of while (!done)
+		System.out.println();
+		System.out.println(order1.toString());
 		
-	}
+		sIn.close();
+
+    }
+
+
 	
 	private static DessertItem userPromptSundae(Order order1, String s1, String s2, String s3, String s4, String s5) {
 		

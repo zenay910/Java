@@ -39,5 +39,16 @@ public class Order {
 		}
 		return totalTax;
 	}
+	public String toString(){
+		String finalOutput = "";
+		for (DessertItem e : order) {
+			finalOutput += e.toString() + "\n";
+			
+		}
+
+
+
+		return finalOutput;
+	}
 
 }

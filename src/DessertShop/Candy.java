@@ -44,11 +44,11 @@ public class Candy extends DessertItem{
 
 	public String toString(){
 		String line1 = String.format("%s",getName());
-		String line2 = String.format("%f lbs. @ $%f/lbs.:",candyWeight, pricePerPound);
-		String line3 = String.format("$%f",calculateCost());
-		String line4 = String.format("[TAX: $%f]",calculateTax());
+		String line2 = String.format("%.2f lbs. @ $%.2f/lbs.:",candyWeight, pricePerPound);
+		String line3 = String.format("$%.2f",calculateCost());
+		String line4 = String.format("[TAX: $%.2f]",calculateTax());
 
-		String output = String.format("$s\n\t%-45s%s%17s",line1,line2,line3,line4);
+		String output = String.format("%-25s%-30s%s%17s",line1,line2,line3,line4);
 
 
 

@@ -70,6 +70,7 @@ public class DessertShop {
 		        }//end of switch (choice)
 		    }//end of if (choice.equals(""))
 		}//end of while (!done)
+<<<<<<< HEAD
 		System.out.println("----------------------------------------Receipt--------------------------------------------");
 		for (DessertItem e : order1.getOrderList()) {
 			System.out.println(e.toString());
@@ -77,6 +78,12 @@ public class DessertShop {
 		}
 		System.out.println("--------------------------------------------------------------------------------------------");
 
+=======
+		System.out.println();
+		System.out.println(order1.toString());
+		
+		sIn.close();
+>>>>>>> ab5a0e4a3728f49e28277dee0d737a31653f332c
 
     }
 

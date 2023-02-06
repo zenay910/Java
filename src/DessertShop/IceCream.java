@@ -44,11 +44,11 @@ public class IceCream extends DessertItem {
 
 	public String toString(){
 		String line1 = String.format("%s",getName());
-		String line2 = String.format("%d lbs. @ $%f/lbs.:",scoopCount, pricePerScoop);
-		String line3 = String.format("$%f",calculateCost());
-		String line4 = String.format("[TAX: $%f]",calculateTax());
+		String line2 = String.format("%d lbs.    @ $%.2f/lbs.:",scoopCount, pricePerScoop);
+		String line3 = String.format("$%.2f",calculateCost());
+		String line4 = String.format("[TAX: $%.2f]",calculateTax());
 
-		String output = String.format("$s\n\t%-45s%s%17s",line1,line2,line3,line4);
+		String output = String.format("%-25s%-30s%s%17s",line1,line2,line3,line4);
 
 
 

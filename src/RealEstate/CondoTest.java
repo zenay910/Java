@@ -1,6 +1,6 @@
 package RealEstate;
 
-public 
- {
-    
+public class CondoTest{
+
 }
+
